@@ -1,17 +1,8 @@
 import adapter from '@sveltejs/adapter-static';
 
-const dev = process.argv.includes('dev');
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
+export default {
 	kit: {
-		adapter: adapter({
-			fallback: '404.html'
-		}),
-		paths: {
-			base: dev ? '' : process.env.BASE_PATH,
-		}
+		adapter: adapter() // best not to use any options for Vercel (zero-config platform)
 	}
 };
-
-export default config;

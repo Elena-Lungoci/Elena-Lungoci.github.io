@@ -1,13 +1,18 @@
 <script>
+  import { onMount } from "svelte";
+
+  function show_elements() {
+    window.dispatchEvent(new Event("resize"));
+  }
 </script>
 
-<div>
+<div class="nav-bar" id="main-navbar">
   <!-- add color change on hover -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark font-inter">
-    <div class="container-fluid">
+    <div class="container-fluid" id="navbar-top">
       <a class="navbar-brand" href="./">
         <div class="container">
-          <div class="row">
+          <div class="row d-flex flex-nowrap">
             <div
               class="turquoise dot col-sm text-dark text-center font-kablammo icon"
             >
@@ -25,6 +30,7 @@
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        on:click={show_elements}
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -56,5 +62,12 @@
     text-align: center;
     vertical-align: middle;
     line-height: 35px;
+  }
+  .nav-bar {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 10;
   }
 </style>

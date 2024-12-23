@@ -1,5 +1,10 @@
 
 
+*{
+    color: rgb(255, 255, 255);
+}
+
+/* fonts */
 .font-inter{
     font-family: 'Inter';
 }
@@ -7,6 +12,11 @@
     font-family: 'Kablammo';
     font-size: 30px;
 }
+.font-source-sans-pro{
+    font-family: 'Source Sans Pro';
+}
+
+/* background colors */
 
 .turquoise{
     background-color: #01DEBF;
