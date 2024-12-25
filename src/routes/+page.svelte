@@ -4,25 +4,9 @@
 </script>
 
 <div>
+    
     <Landing/>
-   <br>   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
+  
     <div class="t-color">hi</div>
 </div>
 

@@ -4,6 +4,10 @@
     color: rgb(255, 255, 255);
 }
 
+:root{
+    --turquoise: #01DEBF;
+}
+
 /* fonts */
 .font-inter{
     font-family: 'Inter';
