@@ -1,18 +1,13 @@
 <script lang="ts">
-    import { base } from '$app/paths';
-    import Landing from '$lib/components/Landing.svelte';
+  import { base } from "$app/paths";
+  import Landing from "$lib/components/Landing.svelte";
+  import Skills from "$lib/components/Skills.svelte";
 </script>
 
 <div>
-    
-    <Landing/>
-  
-    <div class="t-color">hi</div>
+  <Landing />
+  <Skills />
 </div>
 
-
 <style>
-    .t-color{
-        color: black;
-    }
 </style>

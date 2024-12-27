@@ -6,7 +6,9 @@
 
 :root{
     --turquoise: #01DEBF;
+    --teal: #67C2B7;
 }
+
 
 /* fonts */
 .font-inter{
@@ -20,8 +22,13 @@
     font-family: 'Source Sans Pro';
 }
 
+
 /* background colors */
 
 .turquoise{
     background-color: #01DEBF;
 }
+
+
+/*  */
+

@@ -39,12 +39,12 @@
     <div class="d-flex justify-content-center mt-4">
       <div class="p-3">
         <a href="https://github.com/Elena-Lungoci"
-          ><i class="fa fa-github icon"></i>
+          ><i class="fa-brands fa-github icon"></i>
         </a>
       </div>
       <div class="p-3">
         <a href="https://www.linkedin.com/in/simona-elena-lungoci-83a827285/"
-          ><i class="fa fa-linkedin-square icon"></i>
+          ><i class="fa-brands fa-linkedin icon"></i>
         </a>
       </div>
       <div class="p-3">
@@ -78,7 +78,6 @@
       --fs-name: 6rem;
       --fs-icon: 2.5rem;
       --fs-description: 2rem;
-      --line-height: 0.75rem;
     }
   }
 
@@ -87,7 +86,6 @@
       --fs-name: 5rem;
       --fs-icon: 2.5rem;
       --fs-description: 1.5rem;
-      --line-height: 0.75rem;
     }
   }
   @media (max-width: 350px) {
@@ -95,7 +93,6 @@
       --fs-name: 4rem;
       --fs-icon: 2.5rem;
       --fs-description: 1.5rem;
-      --line-height: 0.75rem;
     }
   }
 
@@ -107,7 +104,7 @@
     /* position: absolute;
     right: 0;
     left: 0; */
-    height: 100vh;
+    height: max(100vh, 450px);
   }
   .icon {
     font-size: var(--fs-icon);
@@ -119,11 +116,12 @@
     display: inline-block;
     margin-top: var(--margin-top);
   }
-  .line {
-    height: var(--line-height);
-  }
+
   .description-text {
     font-weight: 600;
     font-size: var(--fs-description);
+  }
+  .line {
+    height: 0.75rem;
   }
 </style>
