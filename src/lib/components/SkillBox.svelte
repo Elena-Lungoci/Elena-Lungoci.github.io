@@ -25,7 +25,7 @@
 <div class="box p-3 font-source-sans-pro">
   <div class="icon-container">
     <!-- <i class="fa-brands {iconsNames[iconType]} icon"></i> -->
-    <img src="/{iconsNames[iconType]}.svg" alt="" class="icon" />
+    <img src="/icons/{iconsNames[iconType]}.svg" alt="" class="icon" />
     <div class="mt-auto skill">{skill}</div>
   </div>
 </div>

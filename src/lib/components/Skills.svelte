@@ -1,11 +1,41 @@
 <script>
   import Title from "./Title.svelte";
   import SkillBox from "./SkillBox.svelte";
+
+  let isDown = false;
+  let startX = 0;
+  let scrollLeft = 0;
+  function mouseDown(e) {
+    isDown = true;
+    startX = e.pageX - e.currentTarget.offsetLeft;
+    scrollLeft = e.currentTarget.scrollLeft;
+  }
+  function mouseLeave() {
+    isDown = false;
+  }
+  function mouseup() {
+    isDown = false;
+  }
+  function mouseMove(e) {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - e.currentTarget.offsetLeft;
+    const walk = (x - startX) * 1;
+    e.currentTarget.scrollLeft = scrollLeft - walk;
+  }
 </script>
 
-<div class="content font-source-sans-pro">
+<div class="font-source-sans-pro">
   <Title titleName={"Skills"} />
-  <div class="mt-5 pb-5 px-5 skills-content">
+  <!-- svelte-ignore a11y-no-static-element-interactions -->
+  <div
+    class="mt-5 pb-5 px-5 skills-content"
+    on:mousedown={mouseDown}
+    on:mouseleave={mouseLeave}
+    on:mouseup={mouseup}
+    on:mousemove={mouseMove}
+  >
+    <!-- Add Unity and Svelte -->
     <SkillBox iconType={"csharp"} skill={"C#"} />
     <SkillBox iconType={"python"} skill={"Python"} />
     <SkillBox iconType={"c"} skill={"C"} />
@@ -22,15 +52,14 @@
 </div>
 
 <style>
-  .content {
-    background-color: #211c23;
-  }
+  
   .skills-content {
     overflow-x: auto;
     white-space: nowrap;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
     display: flex;
+    cursor: grab;
   }
   /* Hide scrollbar for Chrome, Safari and Opera */
   .skills-content::-webkit-scrollbar {
