@@ -36,12 +36,13 @@
     on:mousemove={mouseMove}
   >
     <!-- Add Unity and Svelte -->
-    <SkillBox iconType={"csharp"} skill={"C#"} />
+
     <SkillBox iconType={"python"} skill={"Python"} />
     <SkillBox iconType={"c"} skill={"C"} />
     <SkillBox iconType={"html"} skill={"HTML"} />
     <SkillBox iconType={"css"} skill={"CSS"} />
     <SkillBox iconType={"js"} skill={"JS"} />
+    <SkillBox iconType={"csharp"} skill={"C#"} />
     <SkillBox iconType={"git"} skill={"Git"} />
     <SkillBox iconType={"github"} skill={"GitHub"} />
     <SkillBox iconType={"bootstrap"} skill={"Bootstrap"} />
@@ -52,7 +53,6 @@
 </div>
 
 <style>
-  
   .skills-content {
     overflow-x: auto;
     white-space: nowrap;
