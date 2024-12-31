@@ -4,7 +4,7 @@
 </script>
 
 <div>
-  <div class="mt-5 ms-5 h1 title" bind:clientWidth={titleWidth}>
+  <div class="mt-5 ms-4 ms-lg-5 h1 title" bind:clientWidth={titleWidth}>
     {titleName}
     <div
       class="line turquoise mx-auto mt-1"

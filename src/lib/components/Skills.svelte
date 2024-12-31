@@ -29,7 +29,7 @@
   <Title titleName={"Skills"} />
   <!-- svelte-ignore a11y-no-static-element-interactions -->
   <div
-    class="mt-5 pb-5 px-5 skills-content"
+    class="mt-5 pb-5 px-2 px-lg-5 skills-content"
     on:mousedown={mouseDown}
     on:mouseleave={mouseLeave}
     on:mouseup={mouseup}

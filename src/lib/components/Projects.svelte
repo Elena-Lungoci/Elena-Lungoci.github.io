@@ -21,6 +21,13 @@
       </div>
     </div>
     <div class="row">
+        <div
+        class="col mb-4"
+        style="height: {boxWidth * 0.75}px;"
+        bind:clientWidth={boxWidth}
+      >
+        <ProjectBox {boxWidth} projectName={"Slingshot"} />
+      </div>
       <div
         class="col mb-4"
         style="height: {boxWidth * 0.75}px;"
@@ -28,13 +35,7 @@
       >
         <ProjectBox {boxWidth} projectName={"Corona"} />
       </div>
-      <div
-        class="col mb-4"
-        style="height: {boxWidth * 0.75}px;"
-        bind:clientWidth={boxWidth}
-      >
-        <ProjectBox {boxWidth} projectName={"Slingshot"} />
-      </div>
+      
     </div>
   </div>
 </div>
