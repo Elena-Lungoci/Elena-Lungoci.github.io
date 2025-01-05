@@ -131,12 +131,12 @@
     <div
       class="buttons-container"
       bind:clientHeight={buttonsHeight}
-      in:fly={{ duration: 600 }}
+      in:fly={{ duration: 800 }}
     >
-      <a href={projects[projectName].button1[1]}
+      <a target="_blank" href={projects[projectName].button1[1]}
         >{projects[projectName].button1[0]}</a
       >
-      <a href={projects[projectName].button2[1]}
+      <a target="_blank" href={projects[projectName].button2[1]}
         >{projects[projectName].button2[0]}</a
       >
     </div>

@@ -25,7 +25,7 @@
   }
 </script>
 
-<div class="font-source-sans-pro">
+<div id="Skills" class="font-source-sans-pro">
   <Title titleName={"Skills"} />
   <!-- svelte-ignore a11y-no-static-element-interactions -->
   <div

@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import ContactIcons from "./ContactIcons.svelte";
 
   //   let navbarHeight = 0;
   //   let navbarTopHeight = 0;
@@ -36,23 +37,7 @@
     <div class="mt-5 description-text px-4">
       Software Engineering Student at the University of Waterloo
     </div>
-    <div class="d-flex justify-content-center mt-4">
-      <div class="p-3">
-        <a href="https://github.com/Elena-Lungoci"
-          ><i class="fa-brands fa-github icon"></i>
-        </a>
-      </div>
-      <div class="p-3">
-        <a href="https://www.linkedin.com/in/simona-elena-lungoci-83a827285/"
-          ><i class="fa-brands fa-linkedin icon"></i>
-        </a>
-      </div>
-      <div class="p-3">
-        <a href="mailto:elungoci@uwaterloo.ca"
-          ><i class="fa fa-envelope icon"></i>
-        </a>
-      </div>
-    </div>
+    <ContactIcons />
   </div>
 </div>
 
@@ -106,9 +91,7 @@
     left: 0; */
     height: max(100vh, 450px);
   }
-  .icon {
-    font-size: var(--fs-icon);
-  }
+ 
 
   .name {
     font-size: var(--fs-name);

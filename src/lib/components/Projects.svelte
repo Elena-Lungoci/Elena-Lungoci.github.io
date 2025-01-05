@@ -5,7 +5,7 @@
   let boxWidth = 0;
 </script>
 
-<div>
+<div id="Projects">
   <Title titleName={"Projects"} />
   <div class="container mt-4">
     <div class="row">

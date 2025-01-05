@@ -13,11 +13,8 @@
       <a class="navbar-brand" href="./">
         <div class="container">
           <div class="row d-flex flex-nowrap">
-            <div
-              class="turquoise dot col-sm text-dark text-center font-kablammo icon"
-            >
-              E
-            </div>
+            <img src="/favicon.png" alt="logo" class="dot col-sm icon" />
+
             <div class="col-sm">Elena Lungoci</div>
           </div>
         </div>
@@ -38,13 +35,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item me-2 ms-2">
-          <a class="nav-link active" href="./">Skills</a>
+          <a class="nav-link active" href="./#Skills">Skills</a>
         </li>
         <li class="nav-item me-2 ms-2">
-          <a class="nav-link active" href="./">Projects</a>
+          <a class="nav-link active" href="./#Projects">Projects</a>
         </li>
         <li class="nav-item me-2 ms-2">
-          <a class="nav-link active" href="./">Contact</a>
+          <a class="nav-link active" href="./#Contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -54,8 +51,7 @@
 <style>
   .dot {
     height: 35px;
-    width: 35px;
-    border-radius: 50%;
+    width: auto;
     display: inline-block;
   }
   .icon {
