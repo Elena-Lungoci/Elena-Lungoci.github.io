@@ -8,8 +8,7 @@
   <div class="text-center mt-5 px-4 h3">
     Contact me at <a href="mailto:elungoci@uwaterloo.ca"
       >elungoci@uwaterloo.ca</a
-    >! I will do my best to respond as shortyly as possible.
-
+    >! I will do my best to respond as shortly as possible.
   </div>
-    <ContactIcons />
+  <ContactIcons />
 </div>
